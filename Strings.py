@@ -51,3 +51,18 @@ print(a.replace("W","h"))
 
 #splits the string into substrings 
 print(b.split(","))
+
+#combine strings and numbers(F-trings)
+age = 36
+txt = f"My name is John, I am {age}"
+print(txt)
+
+price = 1000
+txt =f"the price of rice is : {price} F CFA"
+print(txt)
+
+price = 1000.328823882
+txt =f"the price of rice is : {price:.2f} F CFA" # :2.f fix the float to only 2 decimals
+print(txt)
+txt = f"The price is {20 * 59} F CFA"
+print(txt)
