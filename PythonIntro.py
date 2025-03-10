@@ -4,6 +4,7 @@ y = "Hello, World!"
 print(x)
 print(y)
 #casting
+a = {"name" : "John", "age" : 36}
 x = str(3)    # x will be '3'
 y = int(3)    # y will be 3
 z = float(3)  # z will be 3.0
@@ -14,6 +15,7 @@ print(z)
 print(type(x))
 print(type(y))
 print(type(z))
+print(type(a))
 #Strings can be declared with '' or with ""
 
 #assign the same or mutiple  values to multiple variables
@@ -75,13 +77,29 @@ def myfunc3():
 myfunc3()
 
 print("Python is " + x)
-#print the data type of a variable
-x = {"name" : "John", "age" : 36}
-y = 1.10
-z = -3255522
-a = 1
-
+#Complex numbers are written with a "j"
+x = 3+5j
 print(type(x))
-print(type(y))
-print(type(z))
-print(type(a))
+#type coversion
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
+
+#convert from int to float:
+a = float(x)
+
+#convert from float to int:
+b = int(y)
+
+#convert from int to complex:
+c = complex(x)
+
+print(a)
+print(b)
+print(c)
+#You cannot convert complex numbers into another number type.
+
+#how to print random number
+import random
+print(random.randrange(1,10))
+
