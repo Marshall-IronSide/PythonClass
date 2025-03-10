@@ -75,3 +75,13 @@ def myfunc3():
 myfunc3()
 
 print("Python is " + x)
+#print the data type of a variable
+x = {"name" : "John", "age" : 36}
+y = 1.10
+z = -3255522
+a = 1
+
+print(type(x))
+print(type(y))
+print(type(z))
+print(type(a))
