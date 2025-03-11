@@ -103,3 +103,22 @@ print(c)
 import random
 print(random.randrange(1,10))
 
+#The bool() function allows you to evaluate any value
+# and give you True or False in return
+print(bool("Hello"))
+print(bool(5<2))
+print(bool(["apple", "cherry", "banana"]))
+print(bool(""))
+class myclass():
+  def __len__(self):
+    return 0
+
+myobj = myclass()
+print(bool(myobj))
+x= 2
+x = x ** 3 # means x^3
+print(x)
+
+x = 10
+x //= 3  #divide 10 by 3 and leave the decimal part
+print(x) 

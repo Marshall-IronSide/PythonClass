@@ -66,3 +66,8 @@ txt =f"the price of rice is : {price:.2f} F CFA" # :2.f fix the float to only 2 
 print(txt)
 txt = f"The price is {20 * 59} F CFA"
 print(txt)
+
+#escape characters in python
+txt = "We are the so-called \"wikings\" of the north"
+ 
+print(txt)
