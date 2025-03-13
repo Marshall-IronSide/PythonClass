@@ -64,4 +64,15 @@ thislist.remove("orange")
 print(thislist)#remove the second "orange" of the list
 
 #Remove Specified Index
-thislist.pop()
+thislist.pop(5)#removes the first "mango"
+print(thislist)
+thislist.pop()#removes the last item "papaya"
+print(thislist)
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+del thislist[1]#removes "banana"
+print(thislist)
+del thislist #Delete the entire list
+#print(thislist)
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+thislist.clear()#clear the content of the list
+print(thislist)
