@@ -109,4 +109,50 @@ print(newlist)
 thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 newlist = [x for x in thislist if "a" in x]
 print(newlist)
- 
+#Syntax newlist = [expression for item in iterable if condition == True]
+newlist = [ x for x in thislist if x != "apple"]#Only accept items that are not "apple"
+print(newlist)
+
+#Iterable (an object that can be looped over)
+#create an iterable
+newlist = [x for x in range(10)]
+print(newlist)
+newlist = [x for x in range(10) if x < 5]
+print(newlist)
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+newlist = [x.upper() for x in thislist]
+print(newlist)
+newlist = ["Hello" for x in thislist]
+print(newlist)
+newlist = [x if x != "banana" else "orange" for x in thislist] #replace banana with orange
+print(newlist)
+
+#Sort Lists
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+thislist.sort()
+print(thislist)
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+# sort descending
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+thislist.sort(reverse= True)
+print(thislist)
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(reverse= True)
+print(thislist)
+
+#Customize Sort Function
+def myfunc(n):
+    return abs(n - 50)# Sort the list based on how close the number is to 50
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key= myfunc)
+print(thislist)
+#Case Insensitive Sort
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key=str.lower)
+print(thislist)
+#reverse the order of a list
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.reverse()
+print(thislist)
