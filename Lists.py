@@ -76,3 +76,37 @@ del thislist #Delete the entire list
 thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 thislist.clear()#clear the content of the list
 print(thislist)
+
+#loop List
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+#loop through the list items
+for x in thislist:
+    print(x)
+print("_________________")
+[print(x) for x in thislist]
+print("_________________")
+#loop through the list items by referring to their index number
+for i in range(len(thislist)):
+    print(thislist[i])
+print("_________________")
+# using a while loop to go through all the index numbers
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+i = 0
+while i < len(thislist):
+    print(thislist[i])
+    i = i + 1
+    
+ #List Comprehension
+# a new list, containing only the fruits with the letter "a" in the name using for
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+newlist = []
+for x in thislist:
+    if "a" in x:
+        newlist.append(x)
+print(newlist)
+ 
+#With list comprehension
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+newlist = [x for x in thislist if "a" in x]
+print(newlist)
+ 
