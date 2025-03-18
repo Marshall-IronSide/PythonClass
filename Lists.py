@@ -161,3 +161,28 @@ print(thislist)
 thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 newlist = thislist.copy()
 print(thislist)
+
+newlist = []
+print(newlist)
+newlist = list(thislist)
+print(newlist)
+
+newlist = []
+print(newlist)
+newlist = thislist[:]
+print(thislist)
+
+#Join or concatenate Lists
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+newlist = [23, 89, 12, 45, 67, 78, 34]
+mylist = thislist + newlist
+print(mylist)
+
+for x in newlist:
+    thislist.append(x)#concatenate by appending
+print(thislist)
+#the extend() method
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+newlist = [23, 89, 12, 45, 67, 78, 34]
+thislist.extend(newlist)
+print(thislist)
