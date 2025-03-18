@@ -10,3 +10,7 @@ print(type(thistuple))
 
 thistuple = ("applle")#reconized as a string
 print(type(thistuple))
+
+#Using the tuple() method to make a tuple
+thistuple = tuple(("apple", "banana", "cherry"))
+print(thistuple)
