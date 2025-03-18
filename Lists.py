@@ -156,3 +156,8 @@ print(thislist)
 thislist = ["banana", "Orange", "Kiwi", "cherry"]
 thislist.reverse()
 print(thislist)
+
+#Copy a List
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+newlist = thislist.copy()
+print(thislist)
