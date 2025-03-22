@@ -30,3 +30,13 @@ print(thistuple[-4:-1])#-4 (included) and end at index -1 (not included)
 thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
 if "orange" in thistuple:
     print("Yes,'orange' is in the fruits")
+
+#Update Tuples
+
+#Change Tuple Values
+#need to convert the tuple into a list first
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+y = list(thistuple)
+y[1] = "kiwi"
+thistuple = tuple(y)
+print(thistuple)
