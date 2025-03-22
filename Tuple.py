@@ -24,3 +24,9 @@ thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
 print(thistuple[2:5])#2 (included) and end at index 5 (not included)
 print(thistuple[:4])
 print(thistuple[2:])
+print(thistuple[-4:-1])#-4 (included) and end at index -1 (not included)
+
+#Check if Item Exists
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+if "orange" in thistuple:
+    print("Yes,'orange' is in the fruits")
