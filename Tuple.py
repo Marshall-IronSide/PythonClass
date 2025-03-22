@@ -14,3 +14,13 @@ print(type(thistuple))
 #Using the tuple() method to make a tuple
 thistuple = tuple(("apple", "banana", "cherry"))
 print(thistuple)
+
+#Access Tuple Items
+thistuple = tuple(("apple", "banana", "cherry"))
+print(thistuple[1])
+print(thistuple[-1])
+#Range of Indexes
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[2:5])#2 (included) and end at index 5 (not included)
+print(thistuple[:4])
+print(thistuple[2:])
